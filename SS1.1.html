@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج البيانات</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<header>
+    <h1>نموذج البيانات</h1>
+    <hr>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="file:///C:/Users/yakine%20haffoudhi/Desktop/Css%20and%20html/P1.html">العودة إلى النظام الشمسي</a></li>
+    </ul>
+</nav>
+
+
+<main>
+    <section>
+        <h2>معلومات شخصية</h2>
+        <form>
+            <p>الإسم: <input name="nom" type="text" required/></p>
+            <p>اللقب: <input name="prenom" type="text" required/></p>
+            <p>تاريخ الميلاد: <input type="date" name="birthday" required></p>
+            
+            <h3>الجنس</h3>
+            <input type="radio" name="genre" value="ذكر" required/> ذكر
+            <input type="radio" name="genre" value="أنثى" required/> أنثى
+            
+            <p>بريد إلكتروني: <input name="email" type="email" required/></p>
+
+            <h3>اختيار الولاية</h3>
+            <select name="gouvernorat" required>
+                <option value="أريانة">أريانة</option>
+                <option value="باجة">باجة</option>
+                <option value="بن عروس">بن عروس</option>
+                <option value="بنزرت">بنزرت</option>
+                <option value="قبلي">قبلي</option>
+                <option value="قفصة">قفصة</option>
+      
+            </select>
+
+            <h3>التقييمات</h3>
+            <textarea name="avis" rows="4" placeholder="اكتب تقييمك هنا..." required></textarea>
+            <fieldset>
+                <legend>التقييم (من 1 إلى 5):</legend>
+                <label><input type="radio" name="note" value="1" required> 1</label>
+                <label><input type="radio" name="note" value="2"> 2</label>
+                <label><input type="radio" name="note" value="3"> 3</label>
+                <label><input type="radio" name="note" value="4"> 4</label>
+                <label><input type="radio" name="note" value="5"> 5</label>
+            </fieldset>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+</main>
+
+
+<footer>
+    <p>شكراً لتعبئتك النموذج!</p>
+</footer>
+
+</body>
+</html>
